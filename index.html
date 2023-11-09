@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <link rel="stylesheet" href="style.css">
+        <style>
+          :root {
+            /*color*/
+            --color-white: #fff;
+            --color-light-white: #eee;
+            --color-dark-white: #bdbdbd;
+            --color-pink: #fe918d;
+            --color-dark-pink: #ff6863;
+            --color-grey: #616161;
+            --color-dark-grey: #4d4d4d;
+            --color-light-grey: #7c7979;
+            --color-blue: #73aace;
+            --color-dark-blue: #55a1d3;
+            --color-yellow: #fff7d1;
+            --color-orange: #feb546;
+            --color-black: #000;
+      
+            /*font size*/
+            --font-large: 48px;
+            --font-medium: 27px;
+            --font-regular: 18px;
+            --font-small: 16px;
+            --font-micro: 14px;
+      
+            /*font weight*/
+            --weight-bold: 700;
+            --weight-semi-bold: 600;
+            --weight-regular: 400;
+          }
+      
+          * {
+            box-sizing: border-box;
+          }
+          body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            cursor: default;
+          }
+          a {
+            text-decoration: none;
+            color: var(--color-white);
+          }
+          ul {
+            list-style: none;
+            padding-left: 0;
+          }
+          button {
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            outline: none;
+          }
+          h1 {
+            font-size: var(--font-large);
+            font-weight: var(--weight-bold);
+            color: var(--color-black);
+            margin: 16px 0;
+          }
+          h2 {
+            font-size: var(--font-regular);
+            font-weight: var(--weight-regular);
+            color: var(--color-black);
+            margin: 8px 0;
+          }
+          section {
+            width: 100%;
+          }
+          section:nth-child(even) {
+            background-color: skyblue;
+          }
+          #about {
+            height: 500px;
+          }
+          .wrapper {
+            padding-top: 88px;
+            max-width: 1200px;
+            margin: auto;
+          }
+          h1 {
+            color: deepskyblue;
+            font-size: 48px;
+          }
+          h2 {
+            font-size: 32px;
+          }
+          h3 {
+            font-size: 24px;
+            font-weight: 300;
+          }
+          .btns {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+          }
+          .btns .container {
+            position: relative;
+            max-width: 900px;
+            padding: 10px;
+            background-color: transparent;
+            transition: .3s;
+            margin: auto;
+            border-radius: 0 0 50px 50px;
+          }
+          .btns .container.show {
+            background-color: #333;
+          } 
+      
+          .btns__menu {
+            display: flex;
+            justify-content: center;
+          }
+          .btns__menu .btn {
+            font-size: 16px;
+            font-weight: 700;
+            color: #193a40;
+            width: 150px;
+            height: 40px;
+            border-radius: 6px;
+            margin: 4px;
+            cursor: pointer;
+            background-color: #9ad2d9;
+      
+          }
+          .btns__menu .btn:hover {
+            background-color: white;
+            border: 1px solid #ffffff;
+          }
+          button {
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            outline: none;
+          }
+          .arrow-up {
+            position: fixed;
+            bottom: 60px;
+            right: 50px;
+            width: 70px;
+            height: 70px;
+            color: white;
+            background-color: rgb(33, 112, 231);
+            border-radius: 50%;
+            opacity: 0;
+            transition: 300ms;
+          }
+          .arrow-up span {
+            font-size: 40px;
+          }
+          .arrow-up.show {
+            opacity: 1;
+          }
+        </style>
+      </head>
+<body>
+    <div class="btns">
+        <div class="container">
+          <div class="btns__menu">
+            <button class="btn home">Home</button>
+            <button class="btn about">About</button>
+            <button class="btn skills">Skills</button>
+            <button class="btn works">Works</button>
+            <button class="btn contact">Contact</button>
+          </div>
+        </div>
+        <div class="back"></div>
+      </div>
+
+      <section id="home">
+        <div class="wrapper">
+          <h1>Home</h1>
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet consectetur quisquam, voluptates exercitationem temporibus nam reprehenderit qui dolores, accusantium commodi odio ipsam? Quaerat unde molestias, corrupti nisi magni ea.</h3>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="wrapper">
+          <h1>About</h1>
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet consectetur quisquam, voluptates exercitationem temporibus nam reprehenderit qui dolores, accusantium commodi odio ipsam? Quaerat unde molestias, corrupti nisi magni ea.</h3>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="wrapper">
+          <h1>Skills</h1>
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet consectetur quisquam, voluptates exercitationem temporibus nam reprehenderit qui dolores, accusantium commodi odio ipsam? Quaerat unde molestias, corrupti nisi magni ea.</h3>
+        </div>
+      </section>
+
+      <section id="works" class="section">
+        <div class="wrapper section_container">
+          <h1>Works</h1>
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <div class="work_categories">
+            <button class="category_btn" data-filter="*">All<span class="category_count">8</span></button>
+            <button class="category_btn selected" data-filter="visnal-design">Visual Design<span class="category_count">3</span></button>
+            <button class="category_btn" data-filter="web-design">Web Design<span class="category_count">3</span></button>
+            <button class="category_btn" data-filter="motion-graphic">Motion Graphic<span class="category_count">2</span></button>
+          </div><!--work_category-->
+          <div class="work_projects">
+            <a href="#" class="project" target="_blank" data-type="visnal-design">
+              <img src="stu01.png" alt="stu01" class="project_img">
+              <div class="project_description">
+                <h2>Stu01 Portfolio</h2>
+                <span>Visual Design</span>
+              </div>
+            </a>
+            <a href="#" class="project" target="_blank" data-type="visnal-design">
+              <img src="stu02.png" alt="stu01" class="project_img">
+              <div class="project_description">
+                <h2>Stu02 Portfolio</h2>
+                <span>Visual Design</span>
+              </div>
+            </a>
+            <a href="#" class="project" target="_blank" data-type="visnal-design">
+              <img src="stu03.png" alt="stu01" class="project_img">
+              <div class="project_description">
+                <h2>Stu03 Portfolio</h2>
+                <span>Visual Design</span>
+              </div>
+            </a>
+            <a href="#" class="project invisible" target="_blank" data-type="web-design">
+              <img src="stu04.png" alt="stu01" class="project_img">
+              <div class="project_description">
+                <h2>Stu04 Portfolio</h2>
+                <span>Web Design</span>
+              </div>
+            </a>
+            <a href="#" class="project invisible" target="_blank" data-type="web-design">
+              <img src="stu05.png" alt="stu01" class="project_img">
+              <div class="project_description">
+                <h2>Stu05 Portfolio</h2>
+                <span>Web Design</span>
+              </div>
+            </a>
+            <a href="#" class="project invisible" target="_blank" data-type="web-design">
+              <img src="stu06.png" alt="stu01" class="project_img">
+              <div class="project_description">
+                <h2>Stu06 Portfolio</h2>
+                <span>Web Design</span>
+              </div>
+            </a>
+            <a href="#" class="project invisible" target="_blank" data-type="motion-graphic">
+              <img src="stu07.png" alt="stu01" class="project_img">
+              <div class="project_description">
+                <h2>Stu07 Portfolio</h2>
+                <span>Motion Graphic</span>
+              </div>
+            </a>
+            <a href="#" class="project invisible" target="_blank" data-type="motion-graphic">
+              <img src="stu08.png" alt="stu01" class="project_img">
+              <div class="project_description">
+                <h2>Stu08 Portfolio</h2>
+                <span>Motion Graphic</span>
+              </div>
+            </a>
+          </div><!--work_projects-->
+          </div>
+        
+      </section>
+
+      <section id="contact">
+        <div class="wrapper">
+          <h1>Contact</h1>
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto amet consectetur quisquam, voluptates exercitationem temporibus nam reprehenderit qui dolores, accusantium commodi odio ipsam? Quaerat unde molestias, corrupti nisi magni ea.</h3>
+        </div>
+      </section>
+
+      <button class="arrow-up">
+        <span class="material-symbols-outlined">
+          arrow_upward
+        </span>
+      </button>
+
+      <button class="arrow-up show">
+        <span class="material-symbols-outlined">
+          arrow_upward
+        </span>
+      </button>
+
+      <script>
+        const btnHome = document.querySelector('.home');
+        const sectionHome = document.querySelector('#home');
+        btnHome.addEventListener('click', function () {
+          sectionHome.scrollIntoView({behavior:"smooth", block:"center"})
+        })
+        const btnAbout = document.querySelector('.about');
+        const sectionAbout = document.querySelector('#about');
+        btnAbout.addEventListener('click', function () {
+          sectionAbout.scrollIntoView({behavior:"smooth", block:"center"})
+        })
+        const btnSkills = document.querySelector('.skills');
+        const sectionSkills = document.querySelector('#skills');
+        btnSkills.addEventListener('click', function () {
+          sectionSkills.scrollIntoView({behavior:"smooth", block:"center"})
+        })
+        const btnWorks = document.querySelector('.works');
+        const sectionWorks = document.querySelector('#works');
+        btnWorks.addEventListener('click', function () {
+          sectionWorks.scrollIntoView({behavior:"smooth", block:"center"})
+        })
+        const btnContact = document.querySelector('.contact');
+        const sectionContact = document.querySelector('#contact');
+        btnContact.addEventListener('click', function () {
+          sectionContact.scrollIntoView({behavior:"smooth", block:"center"})
+        })
+        
+        const arrowUp = document.querySelector('.arrow-up')
+        document.addEventListener('scroll', function() {
+          // console.log(window.scrollY);
+          if (window.scrollY > 300) {
+            arrowUp.classList.add('show');
+          } else {
+            arrowUp.classList.remove('show');
+          }
+        })
+    
+        arrowUp.addEventListener('click', function () {
+          sectionHome.scrollIntoView({behavior:"smooth", block:"center"})
+        })
+    
+        const btnsBack = document.querySelector('.btns .container')
+        document.addEventListener('scroll', function() {
+          if (window.scrollY > 300) {
+            btnsBack.classList.add('show');
+          } else {
+            btnsBack.classList.remove('show');
+          }
+        });
+    
+    
+        const workBtnContainer = document.querySelector('.work_categories');
+        const projectContainer = document.querySelector('.work_projects');
+        const project = document.querySelectorAll('.project');
+    
+        workBtnContainer.addEventListener('click', (e) => {
+          const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter
+          if (filter == null) {
+            return;
+          }
+          const active = document.querySelector('.category_btn.selected');
+          active.classList.remove('selected');
+          // 조건 ? 참 : 거짓
+          const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+          target.classList.add('selected');
+          projectContainer.classList.add('anim-out');
+        setTimeout(() => {
+          project.forEach((project)=> {
+            if(filter ==='*' || filter === project.dataset.type){
+              project.classList.remove('invisible');
+            } else {
+              project.classList.add('invisible')
+            }
+          });
+          projectContainer.classList.remove('anim-out');
+        }, 300)
+        });
+    
+    
+      </script>
+</body>
+</html>
